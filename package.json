@@ -1,0 +1,30 @@
+{
+  "name": "promise-one",
+  "version": "1.0.0",
+  "description": "Promise.one",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarofghosts/promise-one.git"
+  },
+  "keywords": [
+    "Promise",
+    "one"
+  ],
+  "author": "jesse keane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarofghosts/promise-one/issues"
+  },
+  "homepage": "https://github.com/jarofghosts/promise-one#readme",
+  "devDependencies": {
+    "standard": "5.4.1",
+    "tape": "4.2.2"
+  },
+  "dependencies": {
+    "es6-promise": "3.0.2"
+  }
+}
