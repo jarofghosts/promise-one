@@ -1,9 +1,9 @@
 'use strict'
 
-const Promise = require('es6-promise').Promise
-const test = require('tape')
+var Promise = require('es6-promise').Promise
+var test = require('tape')
 
-const promiseOne = require('../')
+var promiseOne = require('../')
 
 test('resolves as long as one promise resolves', function (t) {
   t.plan(1)
@@ -37,7 +37,7 @@ test('does not matter if the resolve happens last', function (t) {
 test('errors provided for all rejected and in correct order', function (t) {
   t.plan(1)
 
-  const errors = [new Error('lol'), new Error('rofl'), new Error('hardyhar')]
+  var errors = [new Error('lol'), new Error('rofl'), new Error('hardyhar')]
 
   promiseOne([
     new Promise(function (resolve, reject) {

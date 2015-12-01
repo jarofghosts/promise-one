@@ -29,6 +29,8 @@ promiseOne([promise1, promise2, promise3])
 `promiseOne([promise1, ...]) -> Promise`
 
 * Accepts an array of promises
+* Resolves as soon as one of the promises resolves
+* Rejects only if **all** of the promises reject
 
 ## Notes
 

@@ -1,12 +1,13 @@
 'use strict'
 
-const Promise = require('es6-promise').Promise
+var Promise = require('es6-promise').Promise
 
 module.exports = promiseOne
 
 function promiseOne (promises) {
-  const errors = []
-  let errorCount = 0
+  var errors = []
+  var errorCount = 0
+  var error
 
   return new Promise(function (resolve, reject) {
     promises.forEach(function (promise, idx) {
@@ -18,7 +19,7 @@ function promiseOne (promises) {
         errors[idx] = err
 
         if (++errorCount === promises.length) {
-          const error = new Error('no promises resolved')
+          error = new Error('no promises resolved')
           error.errors = errors
 
           reject(error)
