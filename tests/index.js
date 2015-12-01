@@ -31,7 +31,7 @@ test('does not matter if the resolve happens last', function (t) {
         resolve('wee')
       }, 300)
     })
-  ])
+  ]).then(t.pass).catch(t.fail)
 })
 
 test('errors provided for all rejected and in correct order', function (t) {
